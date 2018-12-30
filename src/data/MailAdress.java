@@ -22,6 +22,11 @@ final public class MailAdress {
     }
 
     @Override
+    public int hashCode() {
+        return Objects.hash(mailAdress);
+    }
+
+    @Override
     public String toString() {
         return "MailAdress{" +
                 "mailAdress='" + mailAdress + '\'' +
