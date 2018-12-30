@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PartyTest {
-    Party p, p1, psame;
+    private Party p, p1, psame;
     @BeforeEach
     void prepare(){
         p = new Party("ABC");
