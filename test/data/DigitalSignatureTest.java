@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class DigitalSignatureTest {
     private DigitalSignature d, d1, dsame;
     byte[] a, b, c;
+
     @BeforeEach
     void prepare(){
         a = "First".getBytes();
@@ -19,6 +20,7 @@ class DigitalSignatureTest {
         d1 = new DigitalSignature(b);
         dsame = new DigitalSignature(c);
     }
+
     @Test
     void getDigitalSignature() {
         assertEquals(a, d.getDigitalSignature());
@@ -26,15 +28,17 @@ class DigitalSignatureTest {
     }
 
     @Test
-    void equalsDiferentObject() {
+    void equalsOnDifferentObjects() {
         assertFalse(d.equals(d1));
     }
+
     @Test
-    void equalsDiferentObjectSameDigitalSignature() {
+    void equalsOnDifferentObjectsWithSameDigitalSignature() {
         assertTrue(d.equals(dsame));
     }
+
     @Test
-    void toStringProperOutput(){
+    void toString(){
         assertEquals("DigitalSignature{digitalsignature="+ Arrays.toString(a)+"}", d.toString());
         assertEquals("DigitalSignature{digitalsignature="+ Arrays.toString(b)+"}", d1.toString());
     }
