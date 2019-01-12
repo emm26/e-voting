@@ -1,6 +1,6 @@
 package data;
 
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -8,38 +8,37 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 
 class DigitalSignatureTest {
-    private DigitalSignature d, d1, dsame;
-    byte[] a, b, c;
+    private DigitalSignature digitalSigOne, digitalSigTwo, digitalSigOneCopy;
+    byte[] byteArrayOne, byteArrayTwo;
 
-    @BeforeEach
+    @BeforeAll
     void prepare(){
-        a = "First".getBytes();
-        b = "Second".getBytes();
-        c = "First".getBytes();
-        d = new DigitalSignature(a);
-        d1 = new DigitalSignature(b);
-        dsame = new DigitalSignature(c);
+        byteArrayOne = "First".getBytes();
+        byteArrayTwo = "Second".getBytes();
+        digitalSigOne = new DigitalSignature(byteArrayOne);
+        digitalSigTwo = new DigitalSignature(byteArrayTwo);
+        digitalSigOneCopy = new DigitalSignature(byteArrayOne);
     }
 
     @Test
     void getDigitalSignature() {
-        assertEquals(a, d.getDigitalSignature());
-        assertEquals(b, d1.getDigitalSignature());
+        assertEquals(byteArrayOne, digitalSigOne.getDigitalSignature());
+        assertEquals(byteArrayTwo, digitalSigTwo.getDigitalSignature());
     }
 
     @Test
     void equalsOnDifferentObjects() {
-        assertFalse(d.equals(d1));
+        assertFalse(digitalSigOne.equals(digitalSigTwo));
     }
 
     @Test
     void equalsOnDifferentObjectsWithSameDigitalSignature() {
-        assertTrue(d.equals(dsame));
+        assertTrue(digitalSigOne.equals(digitalSigOneCopy));
     }
 
     @Test
-    void toString(){
-        assertEquals("DigitalSignature{digitalsignature="+ Arrays.toString(a)+"}", d.toString());
-        assertEquals("DigitalSignature{digitalsignature="+ Arrays.toString(b)+"}", d1.toString());
+    String toStringTest(){
+        assertEquals("DigitalSignature{digitalsignature="+ Arrays.toString(byteArrayOne)+"}", digitalSigOne.toString());
+        assertEquals("DigitalSignature{digitalsignature="+ Arrays.toString(byteArrayTwo)+"}", digitalSigTwo.toString());
     }
 }
