@@ -1,0 +1,7 @@
+package kiosk;
+
+class VoteCounterTest {
+
+    }
+}
+}
