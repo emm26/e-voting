@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a9f30fd-d507-4fec-b9fe-82bedb9eb5d7" name="Default Changelist" comment="solved equals issue on class Party">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/E-Voting/data/Party.class" afterPath="$PROJECT_DIR$/out/production/E-Voting/data/Party.class" />
+    <list default="true" id="4a9f30fd-d507-4fec-b9fe-82bedb9eb5d7" name="Default Changelist" comment="implemented VoteCounter test and refactored its associated class">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/E-Voting/data/PartyTest.class" afterPath="$PROJECT_DIR$/out/test/E-Voting/data/PartyTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kiosk/VoteCounter.java" afterPath="$PROJECT_DIR$/src/kiosk/VoteCounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/data/DigitalSignatureTest.java" afterPath="$PROJECT_DIR$/test/data/DigitalSignatureTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/data/MailAddressTest.java" afterPath="$PROJECT_DIR$/test/data/MailAddressTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/data/NifTest.java" afterPath="$PROJECT_DIR$/test/data/NifTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/data/PartyTest.java" afterPath="$PROJECT_DIR$/test/data/PartyTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/kiosk/VoteCounterTest.java" afterPath="$PROJECT_DIR$/test/kiosk/VoteCounterTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -78,8 +73,8 @@
           <file leaf-file-name="VoteCounterTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/kiosk/VoteCounterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="892">
-                  <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+                <state relative-caret-position="191">
+                  <caret line="36" column="53" lean-forward="false" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -136,7 +131,7 @@
           <file leaf-file-name="VoteCounter.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/kiosk/VoteCounter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="110">
+                <state relative-caret-position="554">
                   <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -984,7 +979,7 @@
       <workItem from="1547112509375" duration="504000" />
       <workItem from="1547226151079" duration="5717000" />
       <workItem from="1547281685296" duration="3805000" />
-      <workItem from="1547303142831" duration="4910000" />
+      <workItem from="1547303142831" duration="5090000" />
     </task>
     <task id="LOCAL-00001" summary="Party class creada">
       <created>1546192037468</created>
@@ -1140,7 +1135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547295063357</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="implemented VoteCounter test and refactored its associated class">
+      <created>1547310391300</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1547310391300</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1171,12 +1173,12 @@
     <history-entry file="All_in_E-Voting - 2019.01.12 at 17h 22m 50s.xml">
       <configuration name="All in E-Voting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PartyTest - 2018.12.30 at 19h 25m 40s.xml">
-      <configuration name="PartyTest" configurationId="JUnit" />
+    <history-entry file="All_in_E-Voting - 2019.01.12 at 17h 28m 41s.xml">
+      <configuration name="All in E-Voting" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25720000" />
+    <option name="totallyTimeSpent" value="25900000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1200,7 +1202,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13719513" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43089432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
@@ -1304,7 +1306,8 @@
     <MESSAGE value="solved party test error on toString test" />
     <MESSAGE value="worked on VoteCounter class implementation" />
     <MESSAGE value="solved equals issue on class Party" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved equals issue on class Party" />
+    <MESSAGE value="implemented VoteCounter test and refactored its associated class" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented VoteCounter test and refactored its associated class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1717,8 +1720,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/kiosk/VoteCounterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="191">
+          <caret line="36" column="53" lean-forward="false" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

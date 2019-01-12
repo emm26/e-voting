@@ -34,7 +34,7 @@ class VoteCounterTest {
 	@Test
 	void catchExceptionOnCountParty() {
 		assertThrows(NullPointerException.class,
-			   () -> new VoteCounter(null));
+			   () -> voteCounter.countParty(null));
 	}
 
 	@Test
