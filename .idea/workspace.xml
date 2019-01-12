@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a9f30fd-d507-4fec-b9fe-82bedb9eb5d7" name="Default Changelist" comment="worked on VoteCounter class implementation">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/Party.java" afterPath="$PROJECT_DIR$/src/data/Party.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kiosk/VoteCounter.java" afterPath="$PROJECT_DIR$/src/kiosk/VoteCounter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,7 +92,7 @@
       <file leaf-file-name="VoteCounter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kiosk/VoteCounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
+            <state relative-caret-position="1438">
               <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1169,7 +1167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547291137463</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="worked on VoteCounter class implementation">
+      <created>1547293692933</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1547293692933</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1205,7 +1210,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18531000" />
+    <option name="totallyTimeSpent" value="18651000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1806,7 +1811,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kiosk/VoteCounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
+        <state relative-caret-position="1438">
           <caret line="63" column="35" lean-forward="false" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
