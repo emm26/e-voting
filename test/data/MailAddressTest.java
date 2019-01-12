@@ -37,4 +37,12 @@ class MailAddressTest {
 		assertEquals("MailAddress{mailAdress='def@hij.com'}", m1.toString());
 	}
 
+	@Test
+	void catchExceptionOnNullToConstructor(){
+		Throwable exception = assertThrows(NullPointerException.class,
+			   () -> {
+				   new MailAddress(null);
+			   });
+	}
+
 }
