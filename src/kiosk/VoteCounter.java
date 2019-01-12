@@ -20,7 +20,7 @@ public class VoteCounter {
 		this.validParties = validParties;
 	}
 
-	public void countParty(Party party) throws NullPointerException{
+	private void countParty(Party party) throws NullPointerException{
 		if (party == null){
 			throw new NullPointerException();
 		}
@@ -38,9 +38,9 @@ public class VoteCounter {
 
 	public void scrutinize(Party party) {
 		if (party == null || !(validParties.contains(party))) {
-			nullVotes++;
+			countNull();
 		}else if (party.getName().equals("blank")) {
-			blankVotes++;
+			countBlank();
 		} else {
 			countParty(party);
 		}

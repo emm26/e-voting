@@ -41,8 +41,8 @@ class VoteCounterTest {
 	void scrutinizeTest() {
 		// note that when testing scrutinize() method we are also testing
 		// all the other methods in VoteCounter class:
-		// countParty(), countNull(), countBlank(), getVotesFor(), getNulls()
-		// and getBlanks()
+		// countParty(), countNull(), countBlank(), getVotesFor(),
+		// getNulls() and getBlanks()
 		// as they are called by scrutinize()
 
 		voteCounter.scrutinize(partyOne);
