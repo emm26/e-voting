@@ -20,12 +20,11 @@ public class VoteCounter {
 		this.validParties = validParties;
 	}
 
-	private void countParty(Party party) throws NullPointerException{
+	public void countParty(Party party) throws NullPointerException{
 		if (party == null){
 			throw new NullPointerException();
 		}
-		int partyCurrentVotes = party.getCurrentsVotes();
-		party.setCurrentVotes(partyCurrentVotes + 1);
+		party.setCurrentVotes(party.getCurrentsVotes() + 1);
 	}
 
 	private void countNull() {
