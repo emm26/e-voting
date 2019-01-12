@@ -37,4 +37,11 @@ class NifTest {
 		assertEquals("Nif{nif='987654321A'}", n1.toString());
 	}
 
+	@Test
+	void catchExceptionOnNullToConstructor(){
+		Throwable exception = assertThrows(NullPointerException.class,
+			   () -> {
+				   new Nif(null);
+			   });
+	}
 }

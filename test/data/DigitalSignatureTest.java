@@ -1,6 +1,6 @@
 package data;
 
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -11,7 +11,7 @@ class DigitalSignatureTest {
     private DigitalSignature digitalSigOne, digitalSigTwo, digitalSigOneCopy;
     byte[] byteArrayOne, byteArrayTwo;
 
-    @BeforeAll
+    @BeforeEach
     void prepare(){
         byteArrayOne = "First".getBytes();
         byteArrayTwo = "Second".getBytes();
@@ -37,8 +37,16 @@ class DigitalSignatureTest {
     }
 
     @Test
-    String toStringTest(){
+    void toStringTest(){
         assertEquals("DigitalSignature{digitalsignature="+ Arrays.toString(byteArrayOne)+"}", digitalSigOne.toString());
         assertEquals("DigitalSignature{digitalsignature="+ Arrays.toString(byteArrayTwo)+"}", digitalSigTwo.toString());
+    }
+
+    @Test
+    void catchExceptionOnNullToConstructor(){
+        Throwable exception = assertThrows(NullPointerException.class,
+                () -> {
+				new DigitalSignature(null);
+                });
     }
 }
