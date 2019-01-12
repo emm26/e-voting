@@ -6,35 +6,35 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MailAddressTest {
-	private MailAddress m, m1, msame;
+	private MailAddress mailAddressOne, mailAddressTwo, mailAddressOneCopy;
 
 	@BeforeEach
 	void prepare() {
-		m = new MailAddress("abc@def.com");
-		m1 = new MailAddress("def@hij.com");
-		msame = new MailAddress("abc@def.com");
+		mailAddressOne = new MailAddress("abc@def.com");
+		mailAddressTwo = new MailAddress("def@hij.com");
+		mailAddressOneCopy = new MailAddress("abc@def.com");
 	}
 
 	@Test
 	void getMailAddress() {
-		assertEquals("abc@def.com", m.getMailAddress());
-		assertEquals("def@hij.com", m1.getMailAddress());
+		assertEquals("abc@def.com", mailAddressOne.getMailAddress());
+		assertEquals("def@hij.com", mailAddressTwo.getMailAddress());
 	}
 
 	@Test
-	void equalsDiferentObject() {
-		assertFalse(m.equals(m1));
+	void equalsOnDifferentObjects() {
+		assertFalse(mailAddressOne.equals(mailAddressTwo));
 	}
 
 	@Test
-	void equalsDiferentObjectSameMailAddress() {
-		assertTrue(m.equals(msame));
+	void equalsOnDifferentObjectsWithSameMailAddress() {
+		assertTrue(mailAddressOne.equals(mailAddressOneCopy));
 	}
 
 	@Test
-	void toStringProperOutput() {
-		assertEquals("MailAddress{mailAddress='abc@def.com'}", m.toString());
-		assertEquals("MailAddress{mailAddress='def@hij.com'}", m1.toString());
+	void toStringTest() {
+		assertEquals("MailAddress{mailAddress='abc@def.com'}", mailAddressOne.toString());
+		assertEquals("MailAddress{mailAddress='def@hij.com'}", mailAddressTwo.toString());
 	}
 
 	@Test
