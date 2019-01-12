@@ -20,7 +20,7 @@ public class VoteCounter {
 		this.validParties = validParties;
 	}
 
-	public void countParty(Party party) throws NullPointerException{
+	private void countParty(Party party) throws NullPointerException{
 		if (party == null){
 			throw new NullPointerException();
 		}
@@ -29,11 +29,11 @@ public class VoteCounter {
 		currentTotalVotes++;
 	}
 
-	public void countNull() {
+	private void countNull() {
 		nullVotes++;
 	}
 
-	public void countBlank() {
+	private void countBlank() {
 		blankVotes++;
 	}
 
