@@ -2,6 +2,7 @@ package data;
 
 final public class Party {
 	private final String name;
+	private int currentVotes;
 
 	public Party(String name) throws NullPointerException {
 		if (name == null) {
@@ -14,12 +15,20 @@ final public class Party {
 		return name;
 	}
 
+	public int getCurrentsVotes(){
+		return currentVotes;
+	}
+
+	public void setCurrentVotes(int newCurrentVotes){
+		this.currentVotes = newCurrentVotes;
+	}
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
 		Party that = (Party) o;
-		return name.equals(that.name);
+		return name.equals(that.name) && currentVotes.equals(that.currentVotes);
 	}
 
 	@Override
