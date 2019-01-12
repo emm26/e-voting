@@ -6,35 +6,35 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PartyTest {
-	private Party p, p1, psame;
+	private Party partyOne, partyTwo, partyOneCopy;
 
 	@BeforeEach
 	void prepare() {
-		p = new Party("ABC");
-		p1 = new Party("DEF");
-		psame = new Party("ABC");
+		partyOne = new Party("ABC");
+		partyTwo = new Party("DEF");
+		partyOneCopy = new Party("ABC");
 	}
 
 	@Test
 	void getName() {
-		assertEquals("ABC", p.getName());
-		assertEquals("DEF", p1.getName());
+		assertEquals("ABC", partyOne.getName());
+		assertEquals("DEF", partyTwo.getName());
 	}
 
 	@Test
-	void equalsDiferentObject() {
-		assertFalse(p.equals(p1));
+	void equalsOnDifferentObjects() {
+		assertFalse(partyOne.equals(partyTwo));
 	}
 
 	@Test
-	void equalsDiferentObjectSamePartyName() {
-		assertTrue(p.equals(psame));
+	void equalsOnDifferentObjectsWithSamePartyName() {
+		assertTrue(partyOne.equals(partyOneCopy));
 	}
 
 	@Test
-	void toStringProperOutput() {
-		assertEquals("Party{name='ABC'}", p.toString());
-		assertEquals("Party{name='DEF'}", p1.toString());
+	void toStringTest() {
+		assertEquals("Party{name='ABC'}", partyOne.toString());
+		assertEquals("Party{name='DEF'}", partyTwo.toString());
 	}
 
 	@Test

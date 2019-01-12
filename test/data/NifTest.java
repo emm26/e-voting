@@ -6,35 +6,35 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class NifTest {
-	private Nif n, n1, nsame;
+	private Nif nifOne, nifTwo, nifOneCopy;
 
 	@BeforeEach
 	void prepare() {
-		n = new Nif("123456789A");
-		n1 = new Nif("987654321A");
-		nsame = new Nif("123456789A");
+		nifOne = new Nif("123456789A");
+		nifTwo = new Nif("987654321A");
+		nifOneCopy = new Nif("123456789A");
 	}
 
 	@Test
 	void getNif() {
-		assertEquals("123456789A", n.getNif());
-		assertEquals("987654321A", n1.getNif());
+		assertEquals("123456789A", nifOne.getNif());
+		assertEquals("987654321A", nifTwo.getNif());
 	}
 
 	@Test
-	void equalsDiferentObject() {
-		assertFalse(n.equals(n1));
+	void equalsOnDifferentObjects() {
+		assertFalse(nifOne.equals(nifTwo));
 	}
 
 	@Test
-	void equalsDiferentObjectSameNif() {
-		assertTrue(n.equals(nsame));
+	void equalsOnDifferentObjectsWithSameNif() {
+		assertTrue(nifOne.equals(nifOneCopy));
 	}
 
 	@Test
-	void toStringProperOutput() {
-		assertEquals("Nif{nif='123456789A'}", n.toString());
-		assertEquals("Nif{nif='987654321A'}", n1.toString());
+	void toStringTest() {
+		assertEquals("Nif{nif='123456789A'}", nifOne.toString());
+		assertEquals("Nif{nif='987654321A'}", nifTwo.toString());
 	}
 
 	@Test
