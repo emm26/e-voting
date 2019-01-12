@@ -39,9 +39,7 @@ class NifTest {
 
 	@Test
 	void catchExceptionOnNullToConstructor(){
-		Throwable exception = assertThrows(NullPointerException.class,
-			   () -> {
-				   new Nif(null);
-			   });
+		assertThrows(NullPointerException.class,
+			   () -> new Nif(null));
 	}
 }

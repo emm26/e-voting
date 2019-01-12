@@ -39,9 +39,7 @@ class PartyTest {
 
 	@Test
 	void catchExceptionOnNullToConstructor() {
-		Throwable exception = assertThrows(NullPointerException.class,
-			   () -> {
-				   new Party(null);
-			   });
+		assertThrows(NullPointerException.class,
+			   () -> new Party(null));
 	}
 }

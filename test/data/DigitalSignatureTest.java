@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DigitalSignatureTest {
     private DigitalSignature digitalSigOne, digitalSigTwo, digitalSigOneCopy;
-    byte[] byteArrayOne, byteArrayTwo;
+    private byte[] byteArrayOne, byteArrayTwo;
 
     @BeforeEach
     void prepare(){
@@ -44,9 +44,7 @@ class DigitalSignatureTest {
 
     @Test
     void catchExceptionOnNullToConstructor(){
-        Throwable exception = assertThrows(NullPointerException.class,
-                () -> {
-				new DigitalSignature(null);
-                });
+        assertThrows(NullPointerException.class,
+                () -> new DigitalSignature(null));
     }
 }

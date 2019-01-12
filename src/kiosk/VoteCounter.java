@@ -9,24 +9,23 @@ import java.util.Set;
  */
 public class VoteCounter {
 	private Set<Party> validParties;
-	private int currentTotalVotes;
-	private int blankVotes;
-	private int nullVotes;
+	private int currentTotalVotes = 0;
+	private int blankVotes = 0;
+	private int nullVotes = 0;
 
 	public VoteCounter(Set<Party> validParties) throws NullPointerException{
 		if (validParties == null){
-			throw new NullPointerException();
+			throw new NullPointerException("VoteCounter constructor received null object");
 		}
 		this.validParties = validParties;
 	}
 
-	private void countParty(Party party) throws NullPointerException{
+	public void countParty(Party party) throws NullPointerException{
 		if (party == null){
 			throw new NullPointerException();
 		}
 		int partyCurrentVotes = party.getCurrentsVotes();
 		party.setCurrentVotes(partyCurrentVotes + 1);
-		currentTotalVotes++;
 	}
 
 	private void countNull() {
