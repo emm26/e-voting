@@ -28,7 +28,7 @@ final public class Party {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
 		Party that = (Party) o;
-		return name.equals(that.name) && currentVotes.equals(that.currentVotes);
+		return name.equals(that.name) && (currentVotes == that.currentVotes);
 	}
 
 	@Override
