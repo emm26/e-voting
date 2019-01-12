@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a9f30fd-d507-4fec-b9fe-82bedb9eb5d7" name="Default Changelist" comment="dealed with null exception test on DigitalSignature">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/E-Voting/data/Party.class" afterPath="$PROJECT_DIR$/out/production/E-Voting/data/Party.class" />
+    <list default="true" id="4a9f30fd-d507-4fec-b9fe-82bedb9eb5d7" name="Default Changelist" comment="dealed with null exception test on all data classes">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/E-Voting/data/PartyTest.class" afterPath="$PROJECT_DIR$/out/test/E-Voting/data/PartyTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/data/MailAddressTest.java" afterPath="$PROJECT_DIR$/test/data/MailAddressTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/data/NifTest.java" afterPath="$PROJECT_DIR$/test/data/NifTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/data/PartyTest.java" afterPath="$PROJECT_DIR$/test/data/PartyTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,10 +56,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DigitalSignatureTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DigitalSignatureTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/data/DigitalSignatureTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="345">
               <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -72,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailAddressTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MailAddressTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/data/MailAddressTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-736">
-              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="174">
+              <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -170,9 +168,9 @@
         <option value="$PROJECT_DIR$/src/data/MailAddress.java" />
         <option value="$PROJECT_DIR$/src/data/DigitalSignature.java" />
         <option value="$PROJECT_DIR$/test/data/DigitalSignatureTest.java" />
-        <option value="$PROJECT_DIR$/test/data/MailAddressTest.java" />
         <option value="$PROJECT_DIR$/test/data/NifTest.java" />
         <option value="$PROJECT_DIR$/test/data/PartyTest.java" />
+        <option value="$PROJECT_DIR$/test/data/MailAddressTest.java" />
       </list>
     </option>
   </component>
@@ -292,7 +290,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DigitalSignatureTest">
+  <component name="RunManager" selected="JUnit.All in E-Voting">
     <configuration default="false" name="All in E-Voting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="E-Voting" />
@@ -880,10 +878,10 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DigitalSignatureTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PartyTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.NifTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in E-Voting" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in E-Voting" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DigitalSignatureTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PartyTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.NifTest" />
       </list>
     </recent_temporary>
   </component>
@@ -906,7 +904,7 @@
       <workItem from="1547072252021" duration="587000" />
       <workItem from="1547112509375" duration="504000" />
       <workItem from="1547226151079" duration="5717000" />
-      <workItem from="1547281685296" duration="3159000" />
+      <workItem from="1547281685296" duration="3274000" />
     </task>
     <task id="LOCAL-00001" summary="Party class creada">
       <created>1546192037468</created>
@@ -985,20 +983,27 @@
       <option name="project" value="LOCAL" />
       <updated>1547288427567</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="dealed with null exception test on all data classes">
+      <created>1547288787946</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1547288787946</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_E-Voting - 2018.12.30 at 19h 59m 01s.xml">
-      <configuration name="All in E-Voting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_E-Voting - 2018.12.30 at 20h 08m 02s.xml">
-      <configuration name="All in E-Voting" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_E-Voting - 2018.12.30 at 20h 10m 41s.xml">
       <configuration name="All in E-Voting" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_E-Voting - 2018.12.30 at 20h 19m 14s.xml">
+      <configuration name="All in E-Voting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_E-Voting - 2019.01.12 at 11h 26m 57s.xml">
+      <configuration name="All in E-Voting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_E-Voting - 2019.01.12 at 11h 27m 55s.xml">
       <configuration name="All in E-Voting" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DigitalSignatureTest - 2019.01.12 at 11h 17m 48s.xml">
@@ -1021,7 +1026,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14811000" />
+    <option name="totallyTimeSpent" value="14926000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1045,7 +1050,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1113,7 +1118,8 @@
     <MESSAGE value="refactored data classes and added null handling exceptions on constructors" />
     <MESSAGE value="simply changed some names of methods" />
     <MESSAGE value="dealed with null exception test on DigitalSignature" />
-    <option name="LAST_COMMIT_MESSAGE" value="dealed with null exception test on DigitalSignature" />
+    <MESSAGE value="dealed with null exception test on all data classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="dealed with null exception test on all data classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1449,23 +1455,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/data/MailAddressTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-736">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/data/DigitalSignatureTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="345">
           <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1009#1010#0" expanded="true" />
             <element signature="e#1076#1077#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/data/MailAddressTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
