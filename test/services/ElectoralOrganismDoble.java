@@ -3,28 +3,41 @@ package services;
 import data.DigitalSignature;
 import data.Nif;
 import data.Party;
-import org.junit.jupiter.api.Test;
 
 public class ElectoralOrganismDoble implements ElectoralOrganism {
+
+	boolean canVoteNif;
+	Nif voterNif;
+
+	public ElectoralOrganismDoble(){
+		canVoteNif = true;
+		voterNif = new Nif("");
+	}
+
+	public Nif getVoterNif(){
+		return voterNif;
+	}
+
+	public Boolean getCanVoteNif(){
+		return canVoteNif;
+	}
 
 	@Override
 	public boolean canVote(Nif nif) throws NullPointerException{
 		mayThrowNullPointerException(nif);
-		// to do
-		return false;
+		voterNif = nif;
+		return !(nif.getNif().equals("00000000A"));
 	}
 
 	@Override
 	public void disableVoter(Nif nif) throws NullPointerException{
 		mayThrowNullPointerException(nif);
-		// to do
-
+		canVoteNif = false;
 	}
 
 	@Override
 	public DigitalSignature askForDigitalSignature(Party party) throws NullPointerException{
 		mayThrowNullPointerException(party);
-		// to do
 		return new DigitalSignature(party.getName().getBytes());
 	}
 
@@ -33,11 +46,5 @@ public class ElectoralOrganismDoble implements ElectoralOrganism {
 			throw new NullPointerException();
 		}
 	}
-
-	@Test
-	void name() {
-
-	}
-
 
 }

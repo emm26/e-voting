@@ -39,7 +39,6 @@ public class VotingKiosk{
 		mayThrowNullPointerException(wantsSignedReceipt);
 
 		if (eO.canVote(nif)){
-			//voteCounter.scrutinize(party);
 			vote(party);
 			eO.disableVoter(nif);
 			if (wantsSignedReceipt){
