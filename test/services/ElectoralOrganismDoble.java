@@ -9,40 +9,40 @@ public class ElectoralOrganismDoble implements ElectoralOrganism {
 	boolean canVoteNif;
 	Nif voterNif;
 
-	public ElectoralOrganismDoble(){
+	public ElectoralOrganismDoble() {
 		canVoteNif = true;
 		voterNif = new Nif("");
 	}
 
-	public Nif getVoterNif(){
+	public Nif getVoterNif() {
 		return voterNif;
 	}
 
-	public Boolean getCanVoteNif(){
+	public Boolean getCanVoteNif() {
 		return canVoteNif;
 	}
 
 	@Override
-	public boolean canVote(Nif nif) throws NullPointerException{
+	public boolean canVote(Nif nif) throws NullPointerException {
 		mayThrowNullPointerException(nif);
 		voterNif = nif;
 		return !(nif.getNif().equals("00000000A"));
 	}
 
 	@Override
-	public void disableVoter(Nif nif) throws NullPointerException{
+	public void disableVoter(Nif nif) throws NullPointerException {
 		mayThrowNullPointerException(nif);
 		canVoteNif = false;
 	}
 
 	@Override
-	public DigitalSignature askForDigitalSignature(Party party) throws NullPointerException{
+	public DigitalSignature askForDigitalSignature(Party party) throws NullPointerException {
 		mayThrowNullPointerException(party);
 		return new DigitalSignature(party.getName().getBytes());
 	}
 
-	public void mayThrowNullPointerException(Object o) throws NullPointerException{
-		if (o == null){
+	public void mayThrowNullPointerException(Object o) throws NullPointerException {
+		if (o == null) {
 			throw new NullPointerException();
 		}
 	}

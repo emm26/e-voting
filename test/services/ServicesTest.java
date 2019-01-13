@@ -9,22 +9,20 @@ import kiosk.VotingRightsFailedException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ServicesTest {
-		ElectoralOrganismDoble electoralOrganism;
-		MailerServiceDoble mailerServiceDoble;
+	ElectoralOrganismDoble electoralOrganism;
+	MailerServiceDoble mailerServiceDoble;
 
 	@BeforeEach
-	void prepare(){
-		electoralOrganism  = new ElectoralOrganismDoble();
+	void prepare() {
+		electoralOrganism = new ElectoralOrganismDoble();
 		mailerServiceDoble = new MailerServiceDoble();
 	}
 
 	@Test
-	void addressIsNull() throws NullPointerException{
+	void addressIsNull() throws NullPointerException {
 		Party testParty = new Party("test");
 
 		assertThrows(NullPointerException.class,
@@ -52,7 +50,7 @@ public class ServicesTest {
 	// electoral organism tests
 
 	@Test
-	void checkCannotVoteException() throws VotingRightsFailedException, NullPointerException{
+	void checkCannotVoteException() throws VotingRightsFailedException, NullPointerException {
 		Nif testNif = new Nif("00000000A");
 		MailAddress testAddress = new MailAddress("abc@def.com");
 		Party testParty = new Party("PartyOne");

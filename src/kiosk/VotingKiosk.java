@@ -10,7 +10,7 @@ import services.MailerService;
 import java.util.HashSet;
 import java.util.Set;
 
-public class VotingKiosk{
+public class VotingKiosk {
 
 	private ElectoralOrganism eO;
 	private MailerService mService;
@@ -22,45 +22,45 @@ public class VotingKiosk{
 		this.voteCounter = new VoteCounter(parties);
 	}
 
-	public void setElectoralOrganism(ElectoralOrganism eO) throws NullPointerException{
+	public void setElectoralOrganism(ElectoralOrganism eO) throws NullPointerException {
 		mayThrowNullPointerException(eO);
 		this.eO = eO;
 	}
 
-	public void setMailerService(MailerService mService) throws NullPointerException{
+	public void setMailerService(MailerService mService) throws NullPointerException {
 		mayThrowNullPointerException(mService);
 		this.mService = mService;
 	}
 
-	public void votingProcess(Nif nif, MailAddress mailAddress, Party party, boolean wantsSignedReceipt) throws VotingRightsFailedException{
+	public void votingProcess(Nif nif, MailAddress mailAddress, Party party, boolean wantsSignedReceipt) throws VotingRightsFailedException {
 		mayThrowNullPointerException(nif);
 		mayThrowNullPointerException(mailAddress);
 		mayThrowNullPointerException(party);
 		mayThrowNullPointerException(wantsSignedReceipt);
 
-		if (eO.canVote(nif)){
+		if (eO.canVote(nif)) {
 			vote(party);
 			eO.disableVoter(nif);
-			if (wantsSignedReceipt){
+			if (wantsSignedReceipt) {
 				sendReceipt(mailAddress, party);
 			}
-		}else{
+		} else {
 			throw new VotingRightsFailedException("Cannot vote");
 		}
 	}
 
-	public void vote(Party party) throws NullPointerException{
+	public void vote(Party party) throws NullPointerException {
 		mayThrowNullPointerException(party);
 		voteCounter.scrutinize(party);
 	}
 
-	public void sendReceipt(MailAddress address, Party party) throws NullPointerException{
+	public void sendReceipt(MailAddress address, Party party) throws NullPointerException {
 		mayThrowNullPointerException(address);
 		mService.send(address, eO.askForDigitalSignature(party));
 	}
 
-	public void mayThrowNullPointerException(Object o) throws NullPointerException{
-		if (o == null){
+	public void mayThrowNullPointerException(Object o) throws NullPointerException {
+		if (o == null) {
 			throw new NullPointerException();
 		}
 	}

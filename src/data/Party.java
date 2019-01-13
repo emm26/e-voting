@@ -15,11 +15,11 @@ final public class Party {
 		return name;
 	}
 
-	public int getCurrentsVotes(){
+	public int getCurrentsVotes() {
 		return currentVotes;
 	}
 
-	public void setCurrentVotes(int newCurrentVotes){
+	public void setCurrentVotes(int newCurrentVotes) {
 		this.currentVotes = newCurrentVotes;
 	}
 

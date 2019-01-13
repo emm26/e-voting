@@ -13,15 +13,15 @@ public class VoteCounter {
 	private int blankVotes = 0;
 	private int nullVotes = 0;
 
-	public VoteCounter(Set<Party> validParties) throws NullPointerException{
-		if (validParties == null){
+	public VoteCounter(Set<Party> validParties) throws NullPointerException {
+		if (validParties == null) {
 			throw new NullPointerException("VoteCounter constructor received null object");
 		}
 		this.validParties = validParties;
 	}
 
-	public void countParty(Party party) throws NullPointerException{
-		if (party == null){
+	public void countParty(Party party) throws NullPointerException {
+		if (party == null) {
 			throw new NullPointerException();
 		}
 		party.setCurrentVotes(party.getCurrentsVotes() + 1);
@@ -38,7 +38,7 @@ public class VoteCounter {
 	public void scrutinize(Party party) {
 		if (party == null || !(validParties.contains(party))) {
 			countNull();
-		}else if (party.getName().equals("blank")) {
+		} else if (party.getName().equals("blank")) {
 			countBlank();
 		} else {
 			countParty(party);

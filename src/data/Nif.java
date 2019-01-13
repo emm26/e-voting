@@ -5,8 +5,8 @@ import java.util.Objects;
 final public class Nif {
 	private final String nif;
 
-	public Nif(String nif) throws NullPointerException{
-		if (nif == null){
+	public Nif(String nif) throws NullPointerException {
+		if (nif == null) {
 			throw new NullPointerException("Nif constructor received null object");
 		}
 		this.nif = nif;

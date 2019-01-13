@@ -1,7 +1,7 @@
 package services;
 
-import data.MailAddress;
 import data.DigitalSignature;
+import data.MailAddress;
 
 public interface MailerService {
 	void send(MailAddress address, DigitalSignature signature);

@@ -38,7 +38,7 @@ class MailAddressTest {
 	}
 
 	@Test
-	void catchExceptionOnNullToConstructor(){
+	void catchExceptionOnNullToConstructor() {
 		assertThrows(NullPointerException.class,
 			   () -> new MailAddress(null));
 	}
