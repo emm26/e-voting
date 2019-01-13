@@ -61,6 +61,7 @@ public class ServicesTest {
 
 		assertThrows(VotingRightsFailedException.class,
 			   () -> votingKiosk.votingProcess(testNif, testAddress, testParty, true));
+		assertEquals(new Nif("00000000A"),electoralOrganism.getVoterNif());
 	}
 
 	@Test
@@ -75,6 +76,7 @@ public class ServicesTest {
 
 		votingKiosk.votingProcess(testNif, testAddress, testParty, false);
 
+		assertEquals(new Nif("00000001A"),electoralOrganism.getVoterNif());
 		assertFalse(electoralOrganism.getCanVoteNif());
 	}
 
